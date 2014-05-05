@@ -2,7 +2,8 @@ OSGi-Services
 =============
 
 
-Alle Services im OSGi angemeldet und sollen über ComponentServiceBus gesteuert werden.
+Die Services PrintingSystem, MessagingSystem und Statisticsystem sind im OSGi angemeldet 
+und sollen über ComponentServiceBus gesteuert werden können.
 
 Der ComponentServiceBus lässt sich nicht als Service mit Klassenzugriff einbinden, 
 Error in der untersten Codezeile der Startmethode des Activators. 
