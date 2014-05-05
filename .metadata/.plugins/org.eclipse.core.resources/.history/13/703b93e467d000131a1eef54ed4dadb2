@@ -1,0 +1,14 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+
+
+public interface Printer {
+	
+	public void executePrintJob() ;
+
+	public String getIpAddress() ;
+
+	public PrinterType getPrinterType();
+
+	public void setPrinterType(PrinterType printerType) ;
+}

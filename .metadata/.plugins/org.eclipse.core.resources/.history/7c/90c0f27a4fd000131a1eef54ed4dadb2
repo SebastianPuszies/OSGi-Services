@@ -1,0 +1,7 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+import de.leuphana.cosu.printingsystemosgi.PrintJobState;
+
+public interface Created {
+	public PrintJobState changePrintJobState() ;
+}

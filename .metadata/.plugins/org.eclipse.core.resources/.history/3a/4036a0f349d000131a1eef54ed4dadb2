@@ -1,0 +1,27 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+import java.util.Date;
+
+public class Document {
+	private String title;
+	private int numberOfPages;
+	private Date printDate;
+	private String printer;
+
+	public void setTitle();
+
+	public String getTitle() ;
+
+	public int getNumberOfPages();
+
+	public void setNumberOfPages() ;
+
+	public Date getPrintDate() ;
+
+	public void setPrintDate() ;
+
+	public String getPrinter() ;
+
+	public void setPrinter() ;
+
+}

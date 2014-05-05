@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Workbench
+Bundle-SymbolicName: de.leuphana.cosu.Workbench
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.leuphana.cosu.workbench.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.osgi.framework;version="1.3.0"
+Require-Bundle: de.leuphana.cosu.ComponentServiceBusOSGi;bundle-version="1.0.0",
+ de.leuphana.cosu.DocumentOSGi;bundle-version="1.0.0",
+ de.leuphana.cosu.MessagingOSGi;bundle-version="1.0.0",
+ de.leuphana.cosu.PrintingSystemOSGi;bundle-version="1.0.0",
+ de.leuphana.cosu.Statistic;bundle-version="1.0.0",
+ de.leuphana.cosu.ToolOSGi;bundle-version="1.0.0"

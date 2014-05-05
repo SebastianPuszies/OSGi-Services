@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;de.leuphana.cosu.ToolOSGi/src/de.leuphana.cosu.toolosgi&apos;&#x0D;&#x0A;- Original project: &apos;Tool&apos;&#x0D;&#x0A;- Destination element: &apos;de.leuphana.cosu.ToolOSGi/src/de.leuphana.cosu.toolosgi&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     de.leuphana.cosa.tool.ToolTypes.java&#x0D;&#x0A;     de.leuphana.cosa.tool.Tool.java" description="Copy compilation units" destination="=de.leuphana.cosu.ToolOSGi/src&lt;de.leuphana.cosu.toolosgi" element1="/src&lt;de.leuphana.cosa.tool{ToolTypes.java" element2="/src&lt;de.leuphana.cosa.tool{Tool.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1399020318010" units="2" version="1.0"/>
+</session>

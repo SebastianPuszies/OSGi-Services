@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Workbench.java&apos; to &apos;de.leuphana.cosu.Workbench/src/de.leuphana.cosu.workbench&apos;&#x0D;&#x0A;- Original project: &apos;Workbench&apos;&#x0D;&#x0A;- Destination element: &apos;de.leuphana.cosu.Workbench/src/de.leuphana.cosu.workbench&apos;&#x0D;&#x0A;- Original element: &apos;de.leuphana.cosa.workbench.Workbench.java&apos;" description="Copy compilation unit" destination="=de.leuphana.cosu.Workbench/src&lt;de.leuphana.cosu.workbench" element1="/src&lt;de.leuphana.cosa.workbench{Workbench.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1399034208810" units="1" version="1.0"/>
+</session>

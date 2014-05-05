@@ -1,0 +1,19 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+import de.leuphana.cosa.printing.domain.printjob.PrintAction;
+import de.leuphana.cosa.printing.domain.printjob.PrintJob;
+
+public interface Printer {
+	String ipAddress;
+	PrinterType printerType;
+
+
+	public void executePrintJob() ;
+
+	public String getIpAddress() ;
+
+	public PrinterType getPrinterType();
+
+	public void setPrinterType(PrinterType printerType);
+
+}

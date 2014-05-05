@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Statistic
+Bundle-SymbolicName: de.leuphana.cosu.Statistic
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.leuphana.cosu.statistic.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: de.leuphana.cosu.toolosgi,
+ org.osgi.framework;version="1.3.0"

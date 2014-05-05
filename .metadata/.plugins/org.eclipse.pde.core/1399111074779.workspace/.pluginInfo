@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="802" class="de.leuphana.cosu.componentservicebusosgi.Activator" localization="OSGI-INF/l10n/bundle" name="ComponentServiceBusOSGi" project="de.leuphana.cosu.ComponentServiceBusOSGi">
+		<library name="."/>
+		<library name="rribbit-2.5.0.jar"/>
+		<library name="slf4j-api-1.7.5.jar"/>
+		<library name="slf4j-simple-1.7.5.jar"/>
+	</bundle>
+	<bundle bundleID="801" class="de.leuphana.cosu.messagingosgi.Activator" localization="OSGI-INF/l10n/bundle" name="MessagingOSGi" project="de.leuphana.cosu.MessagingOSGi">
+		<library name="."/>
+		<library name="rribbit-2.5.0.jar"/>
+	</bundle>
+	<bundle bundleID="806" class="de.leuphana.cosu.statistic.Activator" localization="OSGI-INF/l10n/bundle" name="Statistic" project="de.leuphana.cosu.StatisticOSGi">
+		<library name="rribbit-2.5.0.jar"/>
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="803" class="de.leuphana.cosu.toolosgi.Activator" localization="OSGI-INF/l10n/bundle" name="ToolOSGi" project="de.leuphana.cosu.ToolOSGi"/>
+	<bundle bundleID="798" class="de.leuphana.cosu.printingsystemosgi.Activator" localization="OSGI-INF/l10n/bundle" name="PrintingSystemOSGi" project="de.leuphana.cosu.PrintingSystemOSGi"/>
+</map>

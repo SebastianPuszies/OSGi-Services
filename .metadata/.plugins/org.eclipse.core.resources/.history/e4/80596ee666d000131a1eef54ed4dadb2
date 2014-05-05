@@ -1,0 +1,30 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+
+import de.leuphana.cosu.printingsystemosgi.Created;
+import de.leuphana.cosu.printingsystemosgi.impl.PrintActionImpl;
+import de.leuphana.cosu.printingsystemosgi.impl.PrintActionImpl;
+import de.leuphana.cosu.printingsystemosgi.impl.PrintJobStateImpl;
+
+
+public class CreatedImpl implements PrintJobStateImpl, Created{
+
+	
+	@Override
+	public PrintJobState changePrintJobState(PrintAction printAction) {
+		// Interface (Was?) (1x)
+		// Klassen (Wie? (nx)
+		
+		PrintJobStateImpl printJobState = this;
+		
+		switch (printAction) {
+		case QUEUE:
+			System.out.println(printAction);
+			printJobState =  new QueuedImpl();
+		}
+		
+		return printJobState;
+	}
+
+	
+
+}

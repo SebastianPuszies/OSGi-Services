@@ -1,0 +1,18 @@
+1398848135508	Rename type 'Created'
+1398848153328	Rename type 'Dispatched'
+1398848166918	Rename type 'Document'
+1398848181677	Rename type 'Executed'
+1398848195905	Rename type 'Pending'
+1398848209243	Rename type 'PrintAction'
+1398848224628	Rename type 'Printer'
+1398848234142	Rename type 'PrinterType'
+1398848244089	Rename type 'PrintingSystem'
+1398848259180	Rename type 'PrintJob'
+1398848271523	Rename type 'PrintJobDispatcher'
+1398848288103	Rename type 'PrintJobQueue'
+1398848304284	Rename type 'PrintJobState'
+1398848325068	Rename type 'Queued'
+1398850323191	Delete element
+1398863021988	Delete element
+1398863038701	Delete elements
+1398863093637	Delete element

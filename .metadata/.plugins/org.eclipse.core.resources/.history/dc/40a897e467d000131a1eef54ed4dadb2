@@ -1,0 +1,18 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+import de.leuphana.cosa.printing.domain.Document;
+import de.leuphana.cosa.printing.domain.PrinterType;
+
+public interface PrintJob {
+	
+	public PrintJob(Document document) ;
+	
+	public PrinterType getPrinterType() ;
+
+	public void setPrinterType(PrinterType printerType) ;
+
+	public Document getDocument() ;
+
+	public void setPrintJobState(PrintAction printAction) ;
+
+}

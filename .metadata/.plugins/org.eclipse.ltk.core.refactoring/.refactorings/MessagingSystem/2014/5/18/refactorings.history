@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 packages to &apos;de.leuphana.cosu.MessagingOSGi/src&apos;&#x0D;&#x0A;- Original project: &apos;MessagingSystem&apos;&#x0D;&#x0A;- Destination element: &apos;de.leuphana.cosu.MessagingOSGi/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     MessagingSystem/src/process&#x0D;&#x0A;     MessagingSystem/src/domain.messagechannel&#x0D;&#x0A;     MessagingSystem/src/domain.message&#x0D;&#x0A;     MessagingSystem/src/domain.builder&#x0D;&#x0A;     MessagingSystem/src/domain" description="Copy packages" destination="=de.leuphana.cosu.MessagingOSGi/src" element1="/src&lt;process" element2="/src&lt;domain.messagechannel" element3="/src&lt;domain.message" element4="/src&lt;domain.builder" element5="/src&lt;domain" flags="589830" fragments="5" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1399021785847" version="1.0"/>
+</session>

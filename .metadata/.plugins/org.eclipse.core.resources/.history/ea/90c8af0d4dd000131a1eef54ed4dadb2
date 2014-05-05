@@ -1,0 +1,13 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+import de.leuphana.cosa.printing.domain.printjob.PrintJob;
+import de.leuphana.cosa.tool.Tool;
+
+public interface PrintingSystem  {
+
+	public boolean printDocument(Document document) ;
+
+	public static synchronized PrintingSystem createInstance() ;
+
+	public void setName() ;
+}

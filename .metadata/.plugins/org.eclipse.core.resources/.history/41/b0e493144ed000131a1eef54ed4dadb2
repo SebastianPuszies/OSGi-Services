@@ -1,0 +1,21 @@
+package de.leuphana.cosu.printingsystemosgi;
+import java.util.HashMap;
+import java.util.Map;
+
+
+
+
+public interface PrintJobDispatcher {
+	
+
+	public PrintJobDispatcher getInstance() ;
+	
+	public void addPrintJobQueue(PrintJobQueue printJobQueue) ;
+
+	public void addPrinter(Printer printer) ;
+	
+	public Printer getPrinterForPrintJob(PrintJob printJob) ;
+	
+	public PrintJob getNextPrintJob() ;
+
+}

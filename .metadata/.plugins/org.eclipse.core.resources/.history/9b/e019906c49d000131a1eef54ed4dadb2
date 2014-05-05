@@ -1,0 +1,8 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+public interface Created {
+
+	@Override
+	public PrintJobState changePrintJobState() ;
+
+}

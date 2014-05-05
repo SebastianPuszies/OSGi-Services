@@ -1,0 +1,25 @@
+package domain.messagechannel;
+
+import de.leuphana.cosu.messagingosgi.domain.Content;
+import domain.message.Message;
+
+/**
+ * @author Slotos-Admin
+ * @version 1.0
+ * @created 02-Jun-2013 10:15:15
+ */
+public abstract class MessageChannel {
+
+	public abstract void open();
+
+	public void sendMessage(Message message) {
+		System.out.println("Message sender: " + message.getHeader().getSenderAdress());
+		System.out.println("Message receiver: " + message.getHeader().getReceiverAdress());
+		System.out.println("Message subject: " + message.getHeader().getSubject());
+		Content content = message.getBody().getContent();
+		System.out.println("Message content type: " + content.getContentType());
+		System.out.println("Message content: " + content.getTitle());
+	}
+
+	public abstract void close();
+}

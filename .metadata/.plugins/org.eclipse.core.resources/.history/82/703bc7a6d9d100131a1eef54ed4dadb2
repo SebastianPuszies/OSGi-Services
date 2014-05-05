@@ -1,0 +1,45 @@
+package de.leuphana.cosu.messagingosgi.domain.builder;
+
+import de.leuphana.cosu.messagingosgi.domain.Content;
+import de.leuphana.cosu.messagingosgi.domain.message.Message;
+import domain.messagechannel.MessageChannelType;
+
+public abstract class MessageBuilder {
+	protected Message message;
+
+	public static MessageBuilder create(MessageChannelType messageChannelType) {
+		MessageBuilder messageBuilder = null;
+
+		switch (messageChannelType) {
+		case HTTP:
+			messageBuilder = new HttpMessageBuilder();
+			break;
+		case SMTP:
+			messageBuilder = new SmtpMessageBuilder();
+			break;
+		}
+
+		return messageBuilder;
+	}
+
+	public Message getMessage() {
+		return message;
+	}
+
+	public void setSender(String senderAdress) {
+		message.getHeader().setSender(senderAdress);
+	}
+
+	public void setReceiver(String receiverAdress) {
+		message.getHeader().setReceiver(receiverAdress);
+	}
+
+	public void setSubject(String subject) {
+		message.getHeader().setSubject(subject);
+	}
+
+	public void setContent(Content content) {
+		message.getBody().setContent(content);
+	}
+
+}

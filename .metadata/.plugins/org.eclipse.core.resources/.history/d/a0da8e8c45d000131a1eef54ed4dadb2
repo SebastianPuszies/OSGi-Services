@@ -1,0 +1,55 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+
+import de.leuphana.cosa.printing.domain.printjob.PrintJob;
+import de.leuphana.cosa.tool.Tool;
+
+public class PrintingSystemImpl extends Tool {
+
+	private static PrintingSystemImpl printingSystem;
+	
+	private PrintJobDispatcherImpl printJobDispatcher;
+	private PrintJobQueue printJobQueue;
+
+	private PrintingSystemImpl() {
+		PrinterImpl printer = new PrinterImpl();
+		printer.setPrinterType(PrinterTypeImpl.COLOR);
+
+		printJobQueue = new PrintJobQueue();
+		printJobDispatcher = PrintJobDispatcherImpl.getInstance();
+		printJobDispatcher.addPrinter(printer);
+		printJobDispatcher.addPrintJobQueue(printJobQueue);
+	}
+
+	public boolean printDocument(DocumentImpl document) {
+		PrintJobImpl printJob = new PrintJobImpl(document);
+		printJob.setPrinterType(PrinterTypeImpl.COLOR);
+
+		printJobQueue.addPrintJob(printJob);
+
+		printJob = printJobDispatcher.getNextPrintJob();
+
+		PrinterImpl printer = printJobDispatcher.getPrinterForPrintJob(printJob);
+
+		printer.executePrintJob(printJob);
+		
+		// NotifyObserver
+		setChanged();
+		notifyObservers(printJob.getDocument());
+
+		return true;
+	}
+
+	public static synchronized PrintingSystemImpl createInstance() {
+		if(printingSystem == null) {
+			printingSystem = new PrintingSystemImpl();
+		}
+		
+		return printingSystem;
+	}
+
+	@Override
+	public void setName() {
+		super.name = "PrintingSystem";
+	}
+
+}

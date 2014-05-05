@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="de.leuphana.cosu.printingsystemosgi.Created"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.printingsystemosgi.impl.PrintJobStateImpl"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.printingsystemosgi.PrintAction"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.messagingosgi.domain.Content"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.statistic.PrintedDocument"/>
+<fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.printingsystemosgi.Document"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.printingsystemosgi.PrintingSystem"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.messagingosgi.process.MessagingSystem"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.toolosgi.ToolTypes"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.toolosgi.Tool"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.componentservicebusosgi.ComponentServiceBus"/>
+<fullyQualifiedTypeName name="de.leuphana.cosu.statistic.StatisticsSystem"/>
+</qualifiedTypeNameHistroy>

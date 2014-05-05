@@ -1,0 +1,7 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+
+import de.leuphana.cosu.printingsystemosgi.PrintAction;;
+
+public enum PrintActionImpl implements PrintAction {
+	CREATE, QUEUE, DISPATCH, EXECUTE, HOLD;
+}

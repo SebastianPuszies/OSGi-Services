@@ -1,0 +1,10 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+
+public class Executed implements PrintJobState {
+
+	@Override
+	public PrintJobState changePrintJobState(PrintAction printAction) {
+		return null;
+	}
+
+}

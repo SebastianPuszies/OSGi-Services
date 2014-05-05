@@ -1,0 +1,33 @@
+package domain.messagechannel;
+
+import java.util.Queue;
+
+import de.leuphana.cosu.messagingosgi.domain.message.Message;
+
+/**
+ * @author Slotos-Admin
+ * @version 1.0
+ * @created 02-Jun-2013 10:15:15
+ */
+public class SMTPMessageChannel extends MessageChannel {
+
+	private Queue<Message> messageQueue;
+
+	public SMTPMessageChannel() {
+	}
+
+	public void open() {
+		System.out.println("SMTPMessageChannel.open()");
+		// Spezielles open ...
+	}
+
+	@Override
+	public void sendMessage(Message message) {
+		System.out.println(MessageChannelType.SMTP);
+		super.sendMessage(message);
+	}
+
+	public void close() {
+		System.out.println("SMTPMessageChannel.close()");
+	}
+}

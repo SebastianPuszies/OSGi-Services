@@ -1,0 +1,35 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+
+import de.leuphana.cosa.printing.domain.Document;
+import de.leuphana.cosa.printing.domain.PrinterType;
+
+public class PrintJob {
+	private PrinterType printerType;
+	private DocumentImpl document;
+	private PrintJobState printJobState;
+
+	public PrintJob(DocumentImpl document) {
+		printerType = PrinterType.BLACK_WHITE;
+		this.document = document;
+
+		printJobState = new CreatedImpl();
+		System.out.println(PrintAction.CREATE);
+	}
+
+	public PrinterType getPrinterType() {
+		return printerType;
+	}
+
+	public void setPrinterType(PrinterType printerType) {
+		this.printerType = printerType;
+	}
+
+	public DocumentImpl getDocument() {
+		return document;
+	}
+
+	public void setPrintJobState(PrintAction printAction) {
+		printJobState = printJobState.changePrintJobState(printAction);
+	}
+
+}

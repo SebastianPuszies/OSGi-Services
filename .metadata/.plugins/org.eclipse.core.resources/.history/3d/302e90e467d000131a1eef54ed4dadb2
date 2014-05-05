@@ -1,0 +1,13 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+
+
+
+public interface PrintingSystem  {
+
+	public boolean printDocument(Document document) ;
+
+	public PrintingSystem createInstance() ;
+
+	public void setName() ;
+}

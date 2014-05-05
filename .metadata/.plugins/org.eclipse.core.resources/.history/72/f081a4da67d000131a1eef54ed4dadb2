@@ -1,0 +1,5 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+
+public enum PrinterTypeImpl {
+	COLOR, BLACK_WHITE
+}

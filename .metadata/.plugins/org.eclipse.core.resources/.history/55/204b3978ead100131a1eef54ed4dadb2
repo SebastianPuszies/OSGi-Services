@@ -1,0 +1,44 @@
+package de.leuphana.cosu.componentservicebusosgi;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+
+
+import org.rribbit.RequestResponseBus;
+import org.rribbit.creation.ListenerObjectCreator;
+import org.rribbit.creation.ObjectBasedListenerObjectCreator;
+import org.rribbit.util.RRiBbitUtil;
+
+import de.leuphana.cosu.messagingosgi.process.MessagingSystem;
+import de.leuphana.cosu.printingsystemosgi.PrintingSystem;
+
+public class Activator implements BundleActivator {
+
+	private static BundleContext context;
+	private RequestResponseBus requestResponseBus;
+	private PrintingSystem printingSystem;
+	private MessagingSystem messagingSystem;
+	 
+	static BundleContext getContext() {
+		return context;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
+	 */
+	public void start(BundleContext bundleContext) throws Exception {
+		Activator.context = bundleContext;
+	    context.registerService(ComponentServiceBus.class.getName(), new ComponentServiceBus(printingSystem, messagingSystem), null);
+	    System.out.println("Hello ComponentServiceBus!!");
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * @see org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
+	 */
+	public void stop(BundleContext bundleContext) throws Exception {
+		Activator.context = null;
+	}
+
+}

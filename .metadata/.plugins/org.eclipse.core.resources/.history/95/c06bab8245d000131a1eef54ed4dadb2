@@ -1,0 +1,55 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+import java.util.HashMap;
+import java.util.Map;
+
+import de.leuphana.cosa.printing.domain.printjob.PrintJob;
+
+
+
+public class PrintJobDispatcher {
+	private static PrintJobDispatcher printJobDispatcher;
+	private Map<PrinterTypeImpl, PrinterImpl> printerMap;
+	private PrintJobQueue printJobQueue;
+	private PrintJobImpl currentPrintJob;
+	
+	private PrintJobDispatcher() {
+		printerMap = new HashMap<PrinterTypeImpl, PrinterImpl>();
+	}
+
+	public synchronized static PrintJobDispatcher getInstance() {
+		if (printJobDispatcher == null) {
+			printJobDispatcher = new PrintJobDispatcher();
+		}
+
+		return printJobDispatcher;
+	}
+
+	public void addPrintJobQueue(PrintJobQueue printJobQueue) {
+		this.printJobQueue = printJobQueue;
+	}
+
+	public void addPrinter(PrinterImpl printer) {
+		printerMap.put(printer.getPrinterType(), printer);
+	}
+
+	public PrinterImpl getPrinterForPrintJob(PrintJobImpl printJob) {
+		// Logik um Printer zu ermitteln
+		// - nach Ort
+		// - nach Farbe
+		// - verfügbar
+		PrinterImpl printer = null;
+		
+		switch (printJob.getPrinterType()) {
+		case COLOR:
+			printer = printerMap.get(PrinterTypeImpl.COLOR);
+			break;
+		}
+		
+		return printer;
+	}
+
+	public PrintJobImpl getNextPrintJob() {
+		return printJobQueue.getNextPrintJob();
+	}
+
+}

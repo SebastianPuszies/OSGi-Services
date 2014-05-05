@@ -1,0 +1,5 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+public interface PrintAction {
+
+}

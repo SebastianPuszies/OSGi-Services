@@ -1,0 +1,11 @@
+package de.leuphana.cosu.messagingosgi.domain.builder;
+
+import domain.message.SMTPMessage;
+
+public class SmtpMessageBuilder extends MessageBuilder {
+
+	public SmtpMessageBuilder() {
+		message = new SMTPMessage();
+	}
+
+}

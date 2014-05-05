@@ -1,0 +1,38 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+
+import de.leuphana.cosa.printing.domain.printjob.PrintAction;
+import de.leuphana.cosa.printing.domain.printjob.PrintJob;
+
+public class PrinterImpl {
+	private String ipAddress;
+	private PrinterTypeImpl printerType;
+
+	public PrinterImpl() {
+		this.printerType = PrinterTypeImpl.BLACK_WHITE;
+	}
+
+	public void executePrintJob(PrintJob printJob) {
+		printJob.setPrintJobState(PrintActionImpl.DISPATCH);
+		
+		if (printJob.getDocument().getNumberOfPages() <= 5) {
+			printJob.setPrintJobState(PrintActionImpl.EXECUTE);
+			System.out.println(printJob.getDocument().getTitle());
+		} else {
+			printJob.setPrintJobState(PrintActionImpl.HOLD);
+		}
+		
+	}
+
+	public String getIpAddress() {
+		return ipAddress;
+	}
+
+	public PrinterTypeImpl getPrinterType() {
+		return printerType;
+	}
+
+	public void setPrinterType(PrinterTypeImpl printerType) {
+		this.printerType = printerType;
+	}
+
+}

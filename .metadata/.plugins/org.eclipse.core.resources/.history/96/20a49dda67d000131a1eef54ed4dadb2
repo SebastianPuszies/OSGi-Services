@@ -1,0 +1,22 @@
+package de.leuphana.cosu.printingsystemosgi.impl;
+
+public class DispatchedImpl implements PrintJobStateImpl {
+
+	@Override
+	public PrintJobStateImpl changePrintJobState(PrintActionImpl printAction) {
+		PrintJobStateImpl printJobState = this;
+
+		switch (printAction) {
+		case EXECUTE:
+			printJobState = new ExecutedImpl();
+			break;
+		case HOLD:
+			printJobState = new PendingImpl();
+			break;
+		}
+		System.out.println(printAction);
+
+		return printJobState;
+	}
+
+}

@@ -1,0 +1,14 @@
+package de.leuphana.cosu.printingsystemosgi;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+import de.leuphana.cosu.printingsystemosgi.PrintJob;
+
+
+public interface PrintJobQueue {
+	
+	public void addPrintJob(PrintJob printJob) ;
+	
+	public PrintJob getNextPrintJob();
+
+}

@@ -1,0 +1,26 @@
+INDEX VERSION 1.126+E:\Leuphana\Softwarearchitektur\Eclipse_PrintingSystem20131124\.metadata\.plugins\org.eclipse.jdt.core
+3695813725.index
+3133528496.index
+2812373590.index
+1883305493.index
+1061030442.index
+305854171.index
+285175072.index
+1697886153.index
+1115467115.index
+3974580528.index
+4155206848.index
+1836817456.index
+1498219845.index
+3065916431.index
+1565671550.index
+1238901720.index
+1299022128.index
+4041092966.index
+163172794.index
+26323532.index
+4108727661.index
+997187844.index
+1594019688.index
+30765161.index
+1995173708.index

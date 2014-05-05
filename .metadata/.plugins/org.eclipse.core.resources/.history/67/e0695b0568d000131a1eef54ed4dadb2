@@ -1,0 +1,6 @@
+package de.leuphana.cosu.printingsystemosgi;
+
+public class Snippet {
+	PrintActionImpl printAction
+}
+
