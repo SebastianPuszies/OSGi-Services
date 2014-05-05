@@ -17,3 +17,11 @@ angemeldet werden.
 
 Nur durch Auskommentieren dieser Methode ist ein erfolgreiches aktivieren des OSGi-Plugins
 möglich.
+
+
+
+
+==================================================
+Nur das Messanger Projekt :  
+                        de.leuphana.cosu.MessagingOSGi
+ist relevant.
